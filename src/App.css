@@ -43,10 +43,36 @@ box-shadow: 0 0 3px #5d5c5c;
 }
 
 .overview--task {
-  padding: 5px;
+  padding: 10px;
   margin: 10px;
   font-size: 18px;
   border: 0.8px solid #bab6b6;
   display: flex;
   justify-content: space-between;
+}
+
+.overview--buttons-container {
+  display: flex;
+  gap: 8px;
+}
+
+.overview--delete,
+.overview--edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  width: 50px;  
+
+  cursor: pointer;
+  background-color: #e2eb77;
+  border: none;
+  box-shadow: 0 0 5px #b4b2b2;
+  font-weight: bold;
+}
+
+.overview--delete:hover,
+.overview--edit:hover {
+  background-color: #555c05;
+  color: #FFFFFF;
 }
