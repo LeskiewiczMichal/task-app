@@ -26,14 +26,7 @@ function App() {
 
   function deleteTask(taskId) {
     setTasks((prevTasks) => {
-      const newTasks = [];
-      for (let i = 0; i < prevTasks.length; i++) {
-        const task = prevTasks[i]
-        if (task.id !== taskId) {
-          newTasks.push(task)
-        }
-      }
-      return newTasks
+      return prevTasks.filter((task) => task.id !== taskId)
     })
   }
 
